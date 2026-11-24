@@ -59,7 +59,7 @@ test('navigation and treatments maintain expected count and required fields', ()
   assert.equal(TREATMENTS.length, 6);
   assert.equal(CLINIC_INFO.cep, 'CEP 09070-210');
   for (const treatment of TREATMENTS) {
-    assert.ok(treatment.image.startsWith('/src/assets/images/'));
+    assert.ok(treatment.image.startsWith('/Cl-nica-/src/assets/images/'));
     assert.ok(treatment.imageAlt.length > 10);
   }
 });

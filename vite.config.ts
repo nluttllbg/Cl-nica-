@@ -6,6 +6,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // GitHub Pages serves this project under /Cl-nica-/ rather than at the domain root.
+    base: '/Cl-nica-/',
     plugins: [
       react(),
       tailwindcss(),

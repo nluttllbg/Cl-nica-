@@ -147,14 +147,15 @@ export function getClinicOpenStatus(now: Date = new Date()): ClinicStatus {
   };
 }
 
+const clinicImage = (fileName: string) => `/Cl-nica-/src/assets/images/${fileName}`;
+
 export const CLINIC_IMAGES = {
-  hero: '/src/assets/images/hero_dental_clinic_1795540063416.jpg',
-  aboutReception: '/src/assets/images/about_clinic_reception_1795540063435.jpg',
-  experienceArchitecture:
-    '/src/assets/images/experience_clinic_architecture_1795540067090.jpg',
-  experienceSuite: '/src/assets/images/treatment_surgery_1795540066291.jpg',
-  experienceCare: '/src/assets/images/treatment_prevention_1795540065454.jpg',
-  finalCta: '/src/assets/images/final_cta_smile_1795540067824.jpg',
+  hero: clinicImage('hero_dental_clinic_1795540063416.jpg'),
+  aboutReception: clinicImage('about_clinic_reception_1795540063435.jpg'),
+  experienceArchitecture: clinicImage('experience_clinic_architecture_1795540067090.jpg'),
+  experienceSuite: clinicImage('treatment_surgery_1795540066291.jpg'),
+  experienceCare: clinicImage('treatment_prevention_1795540065454.jpg'),
+  finalCta: clinicImage('final_cta_smile_1795540067824.jpg'),
 } as const;
 
 export const TREATMENTS: TreatmentItem[] = [
@@ -163,7 +164,7 @@ export const TREATMENTS: TreatmentItem[] = [
     title: 'Estética Dental e Facetas',
     description:
       'Cuidados estéticos voltados à harmonia do sorriso, com planejamento individualizado de acordo com as características de cada paciente.',
-    image: '/src/assets/images/treatment_veneers_1795540063279.jpg',
+    image: clinicImage('treatment_veneers_1795540063279.jpg'),
     imageAlt:
       'Paciente com sorriso natural e harmônico após cuidados de estética dental em iluminação natural suave',
     iconName: 'sparkles',
@@ -173,7 +174,7 @@ export const TREATMENTS: TreatmentItem[] = [
     title: 'Clareamento Dental',
     description:
       'Uma alternativa para quem deseja melhorar a aparência da cor dos dentes com orientação e acompanhamento profissional.',
-    image: '/src/assets/images/treatment_whitening_1795540063639.jpg',
+    image: clinicImage('treatment_whitening_1795540063639.jpg'),
     imageAlt:
       'Retrato de paciente sorrindo com dentes luminosos e aparência natural e saudável',
     iconName: 'sun',
@@ -183,7 +184,7 @@ export const TREATMENTS: TreatmentItem[] = [
     title: 'Limpeza e Prevenção',
     description:
       'Cuidados importantes para a manutenção da saúde bucal e prevenção de problemas odontológicos.',
-    image: '/src/assets/images/treatment_prevention_1795540065454.jpg',
+    image: clinicImage('treatment_prevention_1795540065454.jpg'),
     imageAlt:
       'Instrumentos odontológicos esterilizados dispostos sobre bandeja de travertino em ambiente clínico acolhedor',
     iconName: 'shield',
@@ -193,7 +194,7 @@ export const TREATMENTS: TreatmentItem[] = [
     title: 'Ortodontia',
     description:
       'Tratamentos voltados ao alinhamento dentário e à melhora da função e harmonia do sorriso.',
-    image: '/src/assets/images/treatment_orthodontics_1795540065404.jpg',
+    image: clinicImage('treatment_orthodontics_1795540065404.jpg'),
     imageAlt:
       'Alinhador ortodôntico transparente sobre superfície de pedra natural sob luz suave',
     iconName: 'align',
@@ -203,7 +204,7 @@ export const TREATMENTS: TreatmentItem[] = [
     title: 'Extração de Sisos',
     description:
       'Avaliação e cuidados relacionados à necessidade de remoção dos terceiros molares.',
-    image: '/src/assets/images/treatment_surgery_1795540066291.jpg',
+    image: clinicImage('treatment_surgery_1795540066291.jpg'),
     imageAlt:
       'Consultório odontológico moderno com iluminação natural e ambiente tranquilo para procedimentos clínicos',
     iconName: 'heart',
@@ -213,7 +214,7 @@ export const TREATMENTS: TreatmentItem[] = [
     title: 'Estética Orofacial',
     description:
       'Procedimentos estéticos faciais, quando indicados, realizados mediante avaliação individualizada.',
-    image: '/src/assets/images/treatment_orofacial_1795540066664.jpg',
+    image: clinicImage('treatment_orofacial_1795540066664.jpg'),
     imageAlt:
       'Perfil facial natural e sereno destacando equilíbrio e harmonia estética em luz natural',
     iconName: 'smile',
